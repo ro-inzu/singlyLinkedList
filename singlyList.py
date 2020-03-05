@@ -17,6 +17,7 @@ class List:
         self.head = None
 
     def push(self, data):
+        print('pushing new node {}'.format(data))
         new_node = Node(data)
 
         if (self.head == None):
@@ -27,6 +28,7 @@ class List:
         self.head = new_node
 
     def insert(self,prev,data):
+        print('inserting node {}'.format(data))
         new_node = Node(data)
 
         if (self.head == None):
@@ -40,6 +42,7 @@ class List:
         prev.next = new_node
 
     def append(self, data):
+        print('appending node {}'.format(data))
         new_node = Node(data)
 
         if (self.head == None):
@@ -53,10 +56,12 @@ class List:
         find_last.next = new_node
 
     def remove_head(self):
+        print('removing head')
         temp_head = self.head.next
         self.head = temp_head
 
     def remove_tail(self):
+        print('removing tail')
         find_last = self.head
 
         while(find_last.next):
@@ -64,7 +69,17 @@ class List:
             find_last = find_last.next
         current.next = None
 
+    def count_nodes(self):
+        print('counting nodes')
+        count = 0
+        temp_head = self.head
+        while(temp_head):
+            count+=1
+            temp_head = temp_head.next
+        return count
+
     def display(self):
+        print('displaying all nodes')
         temp_head = self.head
 
         while(temp_head):
