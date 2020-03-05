@@ -60,7 +60,6 @@ class List:
     def remove_tail(self):
         print('removing tail')
         find_last = self.head
-
         while(find_last.next):
             current = find_last
             find_last = find_last.next
