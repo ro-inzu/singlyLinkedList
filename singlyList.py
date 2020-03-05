@@ -23,7 +23,6 @@ class List:
         if (self.head == None):
             self.head = new_node
             return
-
         new_node.next = self.head
         self.head = new_node
 
@@ -37,7 +36,6 @@ class List:
         elif (prev == None):
             print('Previous Node is not in List')
             return
-
         new_node.next = prev.next
         prev.next = new_node
 
@@ -48,7 +46,6 @@ class List:
         if (self.head == None):
             self.head = new_node
             return
-
         find_last = self.head
 
         while(find_last.next):
