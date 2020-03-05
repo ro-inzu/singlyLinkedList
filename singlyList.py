@@ -36,7 +36,9 @@ class List:
         elif (prev == None):
             print('Previous Node is not in List')
             return
+        #point the new node to the one right of the one after you want ot insert it to
         new_node.next = prev.next
+        #point the one you want to insert it to to the new node to insert new node
         prev.next = new_node
 
     def append(self, data):
@@ -60,9 +62,12 @@ class List:
     def remove_tail(self):
         print('removing tail')
         find_last = self.head
+        #iterate through the list to get to the last node
         while(find_last.next):
+            #current will be the last node
             current = find_last
             find_last = find_last.next
+        #point the current which is the new last node to None to remove the tail
         current.next = None
 
     def count_nodes(self):
