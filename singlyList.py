@@ -70,6 +70,18 @@ class List:
         #point the current which is the new last node to None to remove the tail
         current.next = None
 
+    def move_tail_front(self):
+        print('moving tail to front of list')
+        find_last = self.head
+
+        while(find_last.next):
+            current = find_last
+            print('current {}'.format(current.data))
+            find_last = find_last.next
+            print('last: {}'.format(find_last.data))
+        current.next = None
+        find_last.next = self.head
+
     def count_nodes(self):
         print('counting nodes')
         count = 0

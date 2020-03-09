@@ -35,5 +35,8 @@ def main():
     total_nodes = llist.count_nodes()
     print('total nodes: {}'.format(total_nodes))
 
+    llist.move_tail_front()
+    llist.display()
+
 if __name__ == '__main__':
     main()
