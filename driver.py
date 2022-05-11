@@ -13,29 +13,29 @@ from singlyList import Llist
 def main():
     llist = Llist()
 
-    llist.append(141)
-    llist.append(302)
+    llist.push(141)
+    llist.push(302)
     llist.append(164)
     llist.append(530)
     llist.append(474)
 
-    # llist.append(33)
+    llist.append(33)
 
-    # #inserts after the node thats after the head
-    # llist.insert(llist.head.next,8)
+    #inserts after the node thats after the head
+    llist.insert(llist.head.next,8)
 
-    # llist.display()
+    llist.display()
 
-    # llist.remove_head()
+    llist.remove_head()
 
-    # llist.display()
+    llist.display()
 
-    # llist.remove_tail()
+    llist.remove_tail()
 
-    # llist.display()
+    llist.display()
 
-    # total_nodes = llist.count_nodes()
-    # print('total nodes: {}'.format(total_nodes))
+    total_nodes = llist.count_nodes()
+    print('total nodes: {}'.format(total_nodes))
 
     # llist.move_tail_front()
     llist.display()
