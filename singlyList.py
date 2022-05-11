@@ -12,7 +12,7 @@ class Node:
         self.next = None
         self.data = data
 
-class List:
+class Llist:
     def __init__(self):
         self.head = None
 
